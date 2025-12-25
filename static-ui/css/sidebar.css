@@ -1,0 +1,65 @@
+.sidebar{
+    background-color: #f1f5fb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sidebar-profile{
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;   
+  text-align: center;    
+  font-weight: bold;
+  font-size: 18px;
+}
+.user-icon {
+  width: 100px;
+  height: 100px;
+  
+  color: #444;
+}
+.sidebar-menue ,.sidebar-bottom {
+  width: 100%;
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.menu-bottom-line {
+  border: none;             
+  height: 1px;              
+  background-color: #999;  
+  width: 80%;            
+     
+  margin: 22px auto 0 auto;  
+}
+.sidebar-menue a {
+text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  
+
+}
+.menue-item {
+  display: inline-flex; 
+  align-items: center;
+  gap: 12px;
+  padding: 8px 32px;
+  cursor: pointer;
+cursor: pointer;
+}
+
+.menue-item:hover {
+    background-color: rgba(52, 124, 255, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    -webkit-transition: background-color 0.3s ease, transform 0.2s ease;
+    -moz-transition: background-color 0.3s ease, transform 0.2s ease;
+    -ms-transition: background-color 0.3s ease, transform 0.2s ease;
+    -o-transition: background-color 0.3s ease, transform 0.2s ease;
+    transform: translateX(2px);
+    -webkit-transform: translateX(2px);
+    -moz-transform: translateX(2px);
+    -ms-transform: translateX(2px);
+    -o-transform: translateX(2px);
+}
