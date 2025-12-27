@@ -1,0 +1,264 @@
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.welcome-text h3 {
+  font-size: 30px;
+  color: rgb(39, 38, 38);
+  margin-bottom: 10px;
+padding-top: 30px;
+}
+.summery-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+  width: 300px;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  align-items: center;
+}
+
+.cart-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.cart:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.cart svg.icon {
+  width: 50px;
+  height: 50px;
+  color: #6c63ff;
+  flex-shrink: 0;
+}
+
+.cart h3 {
+  font-size: 20px;
+  margin: 0;
+  color: #333;
+}
+
+.cart p {
+  font-size: 18px;
+  margin: 5px 0 0 0;
+  color: #555;
+}
+.button-add {
+  padding-top: 30px;
+  display: flex;        
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.button-income,
+.button-expenses {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 22px;
+  border-radius: 12px;
+  background-color: #6c63ff;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(108, 99, 255, 0.35);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
+}
+.button-income:hover,
+.button-expenses:hover {
+  background-color: #5a52e0;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(108, 99, 255, 0.45);
+}
+.button-add svg{
+  color: #fff;
+}
+.recent-trecsaction{
+  align-self: flex-start;
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.recent-trecsaction table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  background-color: #fff;
+}
+
+.recent-trecsaction thead {
+  background-color: #f1f5fb;
+}
+
+.recent-trecsaction th,
+.recent-trecsaction td {
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+}
+
+
+.recent-trecsaction tbody tr {
+  border-bottom: 1px solid #e0e0e0; 
+}
+
+
+.recent-trecsaction thead tr {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+
+.recent-trecsaction tbody tr:last-child {
+  border-bottom: none;
+}
+
+.recent-trecsaction th {
+  font-weight: 600;
+  color: #313131;
+}
+.recent-trecsaction h2{
+   color: rgb(39, 38, 38);
+}
+
+
+
+
+/* media query*/
+@media only screen and (max-width: 600px) {
+  .content {
+    padding: 0 10px;
+  }
+
+  .welcome-text h3 {
+    font-size: 24px;
+    padding-top: 20px;
+  }
+
+  .summery-cart {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .cart {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .cart svg.icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .cart h3 {
+    font-size: 18px;
+  }
+
+  .cart p {
+    font-size: 16px;
+  }
+
+  .button-add {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .button-income,
+  .button-expenses {
+    width: 100%;
+    font-size: 14px;
+    padding: 12px 0;
+  }
+
+  .recent-trecsaction {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .recent-trecsaction table,
+  .recent-trecsaction th,
+  .recent-trecsaction td {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .summery-cart {
+    gap: 18px;
+    justify-content: space-around;
+  }
+
+  .cart {
+    width: 45%;
+  }
+
+  .button-income,
+  .button-expenses {
+    width: 45%;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .summery-cart {
+    gap: 20px;
+  }
+
+  .cart {
+    width: 30%;
+  }
+
+  .button-income,
+  .button-expenses {
+    width: 30%;
+  }
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .summery-cart {
+    gap: 22px;
+  }
+
+  .cart {
+    width: 28%;
+  }
+
+  .button-income,
+  .button-expenses {
+    width: 25%;
+  }
+}
+
