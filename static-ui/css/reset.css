@@ -18,3 +18,8 @@ min-height: 100vh;
     flex: 1;
 
 }
+.container{
+    margin-right: 40px;
+    margin-left:40px;
+
+}
