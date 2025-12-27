@@ -1,0 +1,95 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="css/TransactionList.css">
+        <link rel="stylesheet" href="css/reset.css">
+    </head>
+    <body>
+        <div class="layout">
+            <aside class="sidebar"></aside>
+            <main class="content">
+                <div class="container">
+
+                    <h1>Transaction List</h1>
+
+                 
+                    <div class="controls">
+                        <input type="text" placeholder="Search...">
+
+                        <select class="select-category">
+                            <option value="food">Food</option>
+                            <option value="transport">Transport</option>
+                            <option value="housing">Housing</option>
+                            <option value="utilities">Utilities</option>
+                            <option value="internet-phone">Internet
+                                &Phone</option>
+                            <option value="healthcare">Healthcare</option>
+                            <option value="education">Education</option>
+                            <option value="shopping">Shopping</option>
+                            <option value="entertainment">Entertainment</option>
+                            <option value="travel">Travel</option>
+                            <option value="savings">Savings</option>
+                            <option value="other">Other</option>
+                            <option value="salary">Salary</option>
+                            <option value="freelance">Freelance</option>
+                            <option value="business">Business</option>
+                            <option value="investment">Investment</option>
+                            <option value="gift">Gift</option>
+                            <option value="bonus">Bonus</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <select class="select-type">
+                            <option value="income">Income</option>
+                            <option value="expenses">expense</option>
+                        </select>
+
+                        <button class="add-btn">+ Add Transaction</button>
+                    </div>
+
+                   
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Type</th>
+                                    <th>Category</th>
+                                    <th>Amount</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>01/15/2024</td>
+                                    <td>Expense</td>
+                                    <td>Groceries</td>
+                                    <td class="expense">-$150.00</td>
+                                    <td>Supermarket</td>
+                                </tr>
+                                <tr>
+                                    <td>01/12/2024</td>
+                                    <td>Income</td>
+                                    <td>Salary</td>
+                                    <td class="income">+$2,000.00</td>
+                                    <td>Monthly Salary</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    
+                    <div class="pagination">
+                        <button>&lt;</button>
+                        <button class="active">1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button>Next</button>
+                    </div>
+
+                </div>
+            </main>
+        </body>
+    </html>

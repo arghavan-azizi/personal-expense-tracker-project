@@ -1,0 +1,91 @@
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.controls {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.controls input,
+.controls select {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  flex: 1;
+}
+
+.add-btn {
+  background: #594edb;
+  color: #fff;
+  border: none;
+  padding: 0 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+.table-wrapper {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #f0f3f9;
+}
+
+th, td {
+  padding: 16px;
+  text-align: left;
+}
+
+tbody tr {
+  border-bottom: 1px solid #eee;
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+.income {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.expense {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  gap: 8px;
+}
+
+.pagination button {
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.pagination .active {
+  background: #2f80ed;
+  color: #fff;
+  border-color: #2f80ed;
+}
