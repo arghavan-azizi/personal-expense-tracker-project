@@ -1,0 +1,107 @@
+.register-box {
+  width: 380px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  margin: auto;
+  margin-top:70px;
+}
+.register-box h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 28px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #4bb6c2;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(75, 182, 194, 0.25);
+}
+
+button {
+  width: 100%;
+  padding: 13px;
+  background: #4bb6c2;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #379ba6;
+  transform: translateY(-2px);
+}
+
+/* media query */
+@media only screen and (max-width: 600px) {
+  .register-box {
+    width: 90%;
+    padding: 25px;
+    margin-top: 50px;
+  }
+
+  .register-box h2 {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+    margin-bottom: 22px;
+  }
+
+  .input-group input {
+    padding: 10px;
+  }
+
+  button {
+    padding: 11px;
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .register-box {
+    width: 340px;
+    padding: 30px;
+    margin-top: 60px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .register-box {
+    width: 360px;
+    padding: 35px;
+    margin-top: 70px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .register-box {
+    width: 380px;
+  }
+}

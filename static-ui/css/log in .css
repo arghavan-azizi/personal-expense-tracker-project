@@ -1,0 +1,114 @@
+.login-box {
+  width: 360px;
+  background: #fff;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  margin: auto;
+  margin-top:100px;
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.input-group {
+  margin-bottom: 18px;
+}
+
+.input-group label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 11px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #4bb6c2;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(75, 182, 194, 0.25);
+}
+
+.forgot {
+  display: block;
+  text-align: right;
+  font-size: 13px;
+  color: #4bb6c2;
+  margin-bottom: 22px;
+  text-decoration: none;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #4bb6c2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #379ba6;
+  transform: translateY(-2px);
+}
+
+/* media query */
+@media only screen and (max-width: 600px) {
+
+  .login-box {
+    width: 90%;
+    padding: 25px;
+    margin-top: 60px;
+  }
+
+  .login-box h2 {
+    font-size: 20px;
+  }
+
+  .input-group input {
+    padding: 10px;
+  }
+
+  button {
+    padding: 11px;
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .login-box {
+    width: 340px;
+    margin-top: 80px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .login-box {
+    width: 360px;
+    margin-top: 100px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .login-box {
+    width: 380px;
+  }
+}

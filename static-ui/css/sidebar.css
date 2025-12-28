@@ -5,7 +5,6 @@
     align-items: center;
 }
 .sidebar-profile{
-  padding-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;   
@@ -21,18 +20,18 @@
 }
 .sidebar-menue ,.sidebar-bottom {
   width: 100%;
-  margin-top: 32px;
+  margin-top: 15px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1px;
 }
 .menu-bottom-line {
   border: none;             
   height: 1px;              
   background-color: #999;  
   width: 80%;            
-     
-  margin: 22px auto 0 auto;  
+
+  margin: 12px auto 0 auto;  
 }
 .sidebar-menue a {
 text-decoration: none;
@@ -44,7 +43,7 @@ text-decoration: none;
 .menue-item {
   display: inline-flex; 
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   padding: 8px 32px;
   cursor: pointer;
 cursor: pointer;
