@@ -25,7 +25,7 @@ function SignIn() {
 
    <div className="login-box">
   <h2>Sign In</h2>
-  <p class="subtitle">Welcome back</p>
+  <p className="subtitle">Welcome back</p>
 
   <form onSubmit={handlesubmit}>
     <div className="input-group">

@@ -36,3 +36,7 @@ const user=users.find((user)=>user.email===email && user.password===password)
   }
 }
 
+//logOut user
+export function logOut(){
+  localStorage.removeItem(current_user_key)
+}
