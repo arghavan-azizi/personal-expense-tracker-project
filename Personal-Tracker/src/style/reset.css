@@ -1,29 +1,220 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-     font-family: "Inter", sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 .layout {
   display: flex;
-  height: 100vh; 
+  height: 100vh;
+}
 
+
+.sidebar {
+  width: 250px;
+  background-color: #f1f5fb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  padding-top: 40px;
 }
-.sidebar{
-    width: 20%;
-    
+
+
+.sidebar-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
 }
+
+.user-icon {
+  width: 100px;
+  height: 100px;
+  color: #444;
+}
+
+
+.sidebar-menue,
+.sidebar-bottom {
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.menu-bottom-line {
+  border: none;
+  height: 1px;
+  background-color: #999;
+  width: 80%;
+  margin: 12px auto 0 auto;
+}
+
+.sidebar-menue a,
+.sidebar-bottom a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.sidebar-menue a:hover,
+.sidebar-bottom a:hover {
+  color: #347cff;
+  text-decoration: none;
+}
+
+.menue-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 32px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.menue-item:hover {
+  background-color: rgba(52, 124, 255, 0.2);
+  transform: translateX(2px);
+}
+
+
 .content {
   flex: 1;
   padding: 20px;
-
+  margin-left: 250px; 
 }
-.container{
-    margin-right: 40px;
-    margin-left:40px;
-    text-align: center;
 
+
+.container {
+  margin: 0 40px;
+  text-align: center;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    width: 30%;
+    padding-top: 20px;
+  }
+  .user-icon {
+    width: 60px;
+    height: 60px;
+  }
+  .sidebar-profile p {
+    font-size: 14px;
+  }
+  .menue-item {
+    padding: 8px 16px;
+  }
+  .menue-item a {
+    font-size: 14px;
+  }
+  .content {
+    margin-left: 30%;
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .sidebar {
+    width: 25%;
+    padding-top: 25px;
+  }
+  .user-icon {
+    width: 70px;
+    height: 70px;
+  }
+  .sidebar-profile p {
+    font-size: 15px;
+  }
+  .menue-item {
+    padding: 10px 20px;
+  }
+  .menue-item a {
+    font-size: 15px;
+  }
+  .content {
+    margin-left: 25%;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  .sidebar {
+    width: 22%;
+    padding-top: 30px;
+  }
+  .user-icon {
+    width: 80px;
+    height: 80px;
+  }
+  .sidebar-profile p {
+    font-size: 16px;
+  }
+  .menue-item {
+    padding: 12px 24px;
+  }
+  .menue-item a {
+    font-size: 16px;
+  }
+  .content {
+    margin-left: 22%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .sidebar {
+    width: 20%;
+    padding-top: 35px;
+  }
+  .user-icon {
+    width: 90px;
+    height: 90px;
+  }
+  .sidebar-profile p {
+    font-size: 17px;
+  }
+  .menue-item {
+    padding: 14px 28px;
+  }
+  .menue-item a {
+    font-size: 16px;
+  }
+  .content {
+    margin-left: 20%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .sidebar {
+    width: 18%;
+    padding-top: 40px;
+  }
+  .user-icon {
+    width: 100px;
+    height: 100px;
+  }
+  .sidebar-profile p {
+    font-size: 18px;
+  }
+  .menue-item {
+    padding: 16px 32px;
+  }
+  .menue-item a {
+    font-size: 16px;
+  }
+  .content {
+    margin-left: 18%;
+  }
 }

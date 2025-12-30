@@ -28,10 +28,8 @@ function Register() {
 
   return (
     <>
-      <div className="layout">
-       
-        <main className="content">
-          <div className="container">
+      
+   
             <div className="register-box">
               <h2>Create Account</h2>
               <p className="subtitle">Join us today </p>
@@ -70,9 +68,8 @@ function Register() {
                 <button type="submit">Sign Up</button>
               </form>
             </div>
-          </div>
-        </main>
-      </div>
+       
+      
       <ToastContainer
         position="top-right"
         autoClose={3000}

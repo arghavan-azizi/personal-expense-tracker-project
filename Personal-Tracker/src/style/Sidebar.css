@@ -3,6 +3,7 @@
   background-color: #f1f5fb;
   display: flex;
   flex-direction: column;
+  position: fixed!important;
   align-items: center;
   height: 100vh;
   position: sticky;
