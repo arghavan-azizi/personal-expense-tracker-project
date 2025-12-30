@@ -1,0 +1,248 @@
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.welcome-text h3 {
+  font-size: 28px;
+  color: rgb(39, 38, 38);
+  margin-bottom: 8px;
+
+}
+
+.welcome-text p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.summary-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 220px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 18px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  align-items: center;
+}
+
+.cart:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.cart-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cart svg.icon {
+  width: 40px;
+  height: 40px;
+  color: #6c63ff;
+  flex-shrink: 0;
+}
+
+.cart h3 {
+  font-size: 18px;
+  margin: 0;
+  color: #333;
+}
+
+.cart p {
+  font-size: 16px;
+  margin: 4px 0 0 0;
+  color: #555;
+}
+
+.button-add {
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.button-income,
+.button-expenses {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  background-color: #6c63ff;
+  border: none;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(108, 99, 255, 0.2);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.button-income:hover,
+.button-expenses:hover {
+  background-color: #5a52e0;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(108, 99, 255, 0.3);
+}
+
+.button-add svg {
+  color: #fff;
+}
+
+.recent-transaction {
+  align-self: center;
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  max-width: 900px;
+}
+
+.recent-transaction table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  background-color: #fff;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.recent-transaction thead {
+  background-color: #f1f5fb;
+}
+
+.recent-transaction th,
+.recent-transaction td {
+  padding: 12px 14px;
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+}
+
+.recent-transaction tbody tr {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.recent-transaction thead tr {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.recent-transaction tbody tr:last-child {
+  border-bottom: none;
+}
+
+.recent-transaction th {
+  font-weight: 600;
+  color: #313131;
+}
+
+.recent-transaction h2 {
+  color: rgb(39, 38, 38);
+  margin-bottom: 10px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  .welcome-text h3 {
+    font-size: 22px;
+    padding-top: 15px;
+  }
+
+  .welcome-text p {
+    font-size: 14px;
+  }
+
+  .summary-cart {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .cart {
+    width: 100%;
+    padding: 14px;
+  }
+
+  .cart svg.icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .cart h3 {
+    font-size: 16px;
+  }
+
+  .cart p {
+    font-size: 14px;
+  }
+
+  .button-income,
+  .button-expenses {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px 0;
+  }
+
+  .recent-transaction table,
+  .recent-transaction th,
+  .recent-transaction td {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .summary-cart {
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .cart {
+    width: 45%;
+  }
+
+  .button-income,
+  .button-expenses {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .cart {
+    width: 28%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .cart {
+    width: 220px;
+  }
+}

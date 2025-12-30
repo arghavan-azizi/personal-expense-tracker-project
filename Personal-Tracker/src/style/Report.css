@@ -1,0 +1,171 @@
+
+.summery-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding-top: 50px;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+  width: 200px!important;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  align-items: center;
+}
+
+.cart-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.cart:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.cart svg.icon {
+  width: 50px;
+  height: 50px;
+  color: #6c63ff;
+  flex-shrink: 0;
+}
+
+.cart h3 {
+  font-size: 20px;
+  margin: 0;
+  color: #333;
+}
+
+.cart p {
+  font-size: 18px;
+  margin: 5px 0 0 0;
+  color: #555;
+}
+
+
+.report {
+    padding-top: 70px;
+    display: flex;
+    gap: 20px;
+}
+
+.expenses-category, .income-expenses-chart {
+    width: 48%;
+}
+
+.expenses-category h3, .income-expenses-chart h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.pie-chart, .bar-chart {
+    background-color: #f1f5f8;
+    border-radius: 8px;
+    height: 300px;
+  
+}
+
+
+/* media query */
+@media only screen and (max-width: 600px) {
+  .summery-cart {
+    padding-top: 30px;
+    gap: 15px;
+  }
+
+  .cart {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .cart h3 {
+    font-size: 16px;
+  }
+
+  .cart p {
+    font-size: 15px;
+  }
+
+  .report {
+    flex-direction: column;
+    padding-top: 40px;
+  }
+
+  .expenses-category,
+  .income-expenses-chart {
+    width: 100%;
+  }
+
+  .pie-chart,
+  .bar-chart {
+    height: 220px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .cart {
+    width: 280px;
+  }
+
+  .report {
+    flex-direction: column;
+  }
+
+  .expenses-category,
+  .income-expenses-chart {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .summery-cart {
+    gap: 20px;
+  }
+
+  .cart {
+    width: 300px;
+  }
+
+  .report {
+    flex-direction: row;
+  }
+
+  .expenses-category,
+  .income-expenses-chart {
+    width: 48%;
+  }
+
+  .pie-chart,
+  .bar-chart {
+    height: 260px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .cart {
+    width: 320px;
+  }
+
+  .cart h3 {
+    font-size: 18px;
+  }
+
+  .cart p {
+    font-size: 17px;
+  }
+
+  .pie-chart,
+  .bar-chart {
+    height: 280px;
+  }
+}
