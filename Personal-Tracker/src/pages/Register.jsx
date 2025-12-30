@@ -29,7 +29,7 @@ function Register() {
   return (
     <>
       <div className="layout">
-        <aside className="sidebar"></aside>
+       
         <main className="content">
           <div className="container">
             <div className="register-box">
