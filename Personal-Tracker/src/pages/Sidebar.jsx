@@ -2,7 +2,12 @@ import { Link, NavLink } from "react-router-dom";
 import "../style/reset.css";
 import "../style/Sidebar.css";
 
+
 function Sidebar() {
+
+
+
+
   return (
 
       <aside className="sidebar">
@@ -21,7 +26,7 @@ function Sidebar() {
               d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
             />
           </svg>
-          <p>Arghavan Azizi</p>
+         
         </div>
 
         <nav className="sidebar-menue">

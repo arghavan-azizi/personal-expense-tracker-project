@@ -6,6 +6,9 @@ import AddTransaction from "./pages/AddTransaction";
 import TransactionList from "./pages/TransactionList";
 import Dashboard from "./pages/Dashboard";
 import Report from "./pages/Report";
+import ProtectedRoute from "./style/ProtectedRoute";
+
+
 
 function App() {
   return (
@@ -14,17 +17,51 @@ function App() {
         <Sidebar />
         <main className="content">
           <Routes>
+
             <Route path="/register" element={<Register />} />
-           <Route path="/singIn" element={<SignIn/>} />
-           <Route path="/addtransaction" element={<AddTransaction/>}/>
-           <Route path="/transactionlist" element={<TransactionList/>}/>
-           <Route path="/" element={<Dashboard/>}/>
-           <Route path="/report" element={<Report/>}/>
+            <Route path="/singIn" element={<SignIn />} />
+
+            <Route
+              path="/addtransaction"
+              element={
+                <ProtectedRoute>
+                  <AddTransaction />
+                </ProtectedRoute>
+              }
+            />
+
+            <Route
+              path="/transactionlist"
+              element={
+                <ProtectedRoute>
+                  <TransactionList />
+                </ProtectedRoute>
+              }
+            />
+
+            <Route
+              path="/report"
+              element={
+                <ProtectedRoute>
+                  <Report />
+                </ProtectedRoute>
+              }
+            />
+
+            <Route
+              path="/"
+              element={
+                <ProtectedRoute>
+                  <Dashboard />
+                </ProtectedRoute>
+              }
+            />
+
           </Routes>
         </main>
       </div>
+
     </BrowserRouter>
   );
 }
-
 export default App;

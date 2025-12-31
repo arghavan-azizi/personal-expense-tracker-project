@@ -3,12 +3,13 @@ import "../style/Register.css";
 import { useState } from "react";
 import { registerUser } from "./storage";
 import { toast, ToastContainer } from "react-toastify";
+import { useNavigate } from "react-router";
 
 function Register() {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const navigate = useNavigate();
   function handlesubmit(e) {
     e.preventDefault();
 
@@ -23,53 +24,58 @@ function Register() {
       toast.error(result.message);
     } else {
       toast.success("Register successful");
+    
+      setUsername("");
+      setEmail("");
+      setPassword("");
+        navigate("/singIn")
     }
   }
 
   return (
     <>
-      
-   
-            <div className="register-box">
-              <h2>Create Account</h2>
-              <p className="subtitle">Join us today </p>
 
-              <form onSubmit={handlesubmit}>
-                <div className="input-group">
-                  <label>Username</label>
-                  <input
-                    type="text"
-                    placeholder="username"
-                    value={username}
-                    onChange={(e) => setUsername(e.target.value)}
-                  />
-                </div>
 
-                <div className="input-group">
-                  <label>Email</label>
-                  <input
-                    type="email"
-                    placeholder="example@gmail.com"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                  />
-                </div>
+      <div className="register-box">
+        <h2>Create Account</h2>
+        <p className="subtitle">Join us today </p>
 
-                <div className="input-group">
-                  <label>Password</label>
-                  <input
-                    type="password"
-                    placeholder="••••••••"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                  />
-                </div>
+        <form onSubmit={handlesubmit} autoComplete="off">
+          <div className="input-group">
+            <label>Username</label>
+            <input   autoComplete="off"
+              type="text"
+              placeholder="username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+            />
+          </div>
 
-                <button type="submit">Sign Up</button>
-              </form>
-            </div>
-       
-      
+          <div className="input-group">
+            <label>Email</label>
+            <input   autoComplete="off"
+              type="email"
+              placeholder="example@gmail.com"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+
+          <div className="input-group">
+            <label>Password</label>
+            <input   autoComplete="new-password"
+              type="password"
+              placeholder="••••••••"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </div>
+
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+
+
       <ToastContainer
         position="top-right"
         autoClose={3000}
