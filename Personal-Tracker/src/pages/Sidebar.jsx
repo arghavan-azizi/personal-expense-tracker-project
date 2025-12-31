@@ -1,3 +1,4 @@
+import { Link, NavLink } from "react-router-dom";
 import "../style/reset.css";
 import "../style/Sidebar.css";
 
@@ -24,59 +25,59 @@ function Sidebar() {
         </div>
 
         <nav className="sidebar-menue">
-          <div className="menue-item">
+          <Link to="/" className="menue-item">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
               stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 4h4v6H5zM5 16h4v2H5zM15 12h4v6h-4zM15 4h4v2h-4z" />
             </svg>
             <a href="#">Dashboard</a>
-          </div>
+          </Link>
 
-          <div className="menue-item">
+          <Link to="/addtransaction" className="menue-item" >
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
               stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M3 10h18M12 19h-6a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3h12" />
+              <path d="M3 10h18M12 19h-6a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3h12"   />
             </svg>
             <a href="#">Add Transaction</a>
-          </div>
+          </Link>
 
-          <div className="menue-item">
+          <Link to="/transactionlist" className="menue-item">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
               stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M4 4h16v16H4z" />
             </svg>
             <a href="#">Transactions</a>
-          </div>
+          </Link>
 
-          <div className="menue-item">
+          <Link to="/report" className="menue-item">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
               stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M14 3v4h4M5 21V5a2 2 0 0 1 2-2h7l5 5v13a2 2 0 0 1-2 2z" />
             </svg>
             <a href="#">Reports</a>
-          </div>
+          </Link>
         </nav>
 
         <hr className="menu-bottom-line" />
 
         <div className="sidebar-bottom">
-          <div className="menue-item">
+          <Link to="/register" className="menue-item">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
               stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M9 8V6a2 2 0 0 1 2-2h7v16h-7a2 2 0 0 1-2-2v-2" />
               <path d="M3 12h13" />
             </svg>
             <a href="#">Register</a>
-          </div>
+          </Link>
 
-          <div className="menue-item">
+          <Link to="/singIn" className="menue-item">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
               stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M9 8V6a2 2 0 0 1 2-2h7v16h-7a2 2 0 0 1-2-2v-2" />
               <path d="M3 12h13" />
             </svg>
             <a href="#">Sign In</a>
-          </div>
+          </Link>
         </div>
       </aside>
 
