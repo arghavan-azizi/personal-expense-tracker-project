@@ -28,15 +28,15 @@ export function registerUser(username, email, password) {
 export function singInUser(email, password) {
   const users = JSON.parse(localStorage.getItem(user_key)) || [];
   const user = users.find((u) => u.email === email && u.password === password);
-localStorage.setItem(current_user_key,user.id)
+
   if (user) {
+    localStorage.setItem(current_user_key, user.id);
     return { success: true, message: "Login successful" };
   } else {
     return { success: false, message: "Invalid email or password" };
-    
-
   }
 }
+
 
 //logOut user
 export function logOut() {
