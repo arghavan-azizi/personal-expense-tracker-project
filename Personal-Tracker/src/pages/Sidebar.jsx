@@ -20,11 +20,7 @@ function Sidebar() {
 
   return (
     <aside className="sidebar">
-      <div className="sidebar-profile">
-        <svg className="user-icon" viewBox="0 0 24 24" stroke="currentColor">
-          <path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2c-4.4 0-8 2.2-8 5v1h16v-1c0-2.8-3.6-5-8-5Z" />
-        </svg>
-      </div>
+      
 
       <nav className="sidebar-menue">
         <Link to="/" className="menue-item">Dashboard</Link>
